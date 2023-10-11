@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.0 on win32)" generated="20231011 19:51:14.400" rpa="false" schemaversion="4">
+<suite id="s1" name="TC1" source="C:\Myntra Automation\TestCases\TC1.robot">
+<test id="s1-t1" name="Login to Myntra Website" line="11">
+<kw name="Open the Myntra Website" library="Instruction">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231011 19:51:14.602" level="INFO">Opening browser 'Firefox' to base url 'https://www.myntra.com/'.</msg>
+<status status="PASS" starttime="20231011 19:51:14.602" endtime="20231011 19:51:21.623"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231011 19:51:21.623" endtime="20231011 19:51:21.898"/>
+</kw>
+<status status="PASS" starttime="20231011 19:51:14.602" endtime="20231011 19:51:21.899"/>
+</kw>
+<kw name="Login to myntra" library="Instruction">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Sigin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231011 19:51:21.903" level="INFO">Clicking element 'xpath://span[@class='myntraweb-sprite desktop-iconUser sprites-headerUser']'.</msg>
+<status status="PASS" starttime="20231011 19:51:21.901" endtime="20231011 19:51:22.301"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231011 19:51:22.301" level="INFO">Clicking element 'xpath://a[@class='desktop-linkButton']'.</msg>
+<status status="PASS" starttime="20231011 19:51:22.301" endtime="20231011 19:51:25.025"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231011 19:51:27.031" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231011 19:51:25.025" endtime="20231011 19:51:27.031"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Username}</arg>
+<arg>${Number}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231011 19:51:27.031" level="INFO">Typing text '8668266169' into text field 'xpath://input[@type='tel']'.</msg>
+<status status="PASS" starttime="20231011 19:51:27.031" endtime="20231011 19:51:27.115"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Username}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231011 19:51:27.115" level="INFO">Clicking element 'xpath://input[@type='tel']'.</msg>
+<status status="PASS" starttime="20231011 19:51:27.115" endtime="20231011 19:51:27.336"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231011 19:51:27.336" level="INFO">Clicking element 'xpath://div[@class='submitBottomOption']'.</msg>
+<status status="PASS" starttime="20231011 19:51:27.336" endtime="20231011 19:51:27.572"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>35s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231011 19:52:02.586" level="INFO">Slept 35 seconds</msg>
+<status status="PASS" starttime="20231011 19:51:27.572" endtime="20231011 19:52:02.586"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231011 19:52:02.586" level="INFO">Clicking element 'xpath://div[@class='submitBottomOption']'.</msg>
+<status status="PASS" starttime="20231011 19:52:02.586" endtime="20231011 19:52:02.821"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231011 19:52:22.835" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20231011 19:52:02.821" endtime="20231011 19:52:22.835"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@class='izooto-optin--cta izooto-optin--cta-later']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231011 19:52:22.835" level="INFO">Clicking button '//*[@class='izooto-optin--cta izooto-optin--cta-later']'.</msg>
+<status status="PASS" starttime="20231011 19:52:22.835" endtime="20231011 19:52:23.113"/>
+</kw>
+<status status="PASS" starttime="20231011 19:51:21.900" endtime="20231011 19:52:23.113"/>
+</kw>
+<status status="PASS" starttime="20231011 19:51:14.602" endtime="20231011 19:52:23.113"/>
+</test>
+<test id="s1-t2" name="Search for Product" line="14">
+<kw name="Search a product" library="Instruction">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Search}</arg>
+<arg>${product_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231011 19:52:23.117" level="INFO">Typing text 'Adidas men Tshirt' into text field 'xpath://*[@class="desktop-searchBar"]'.</msg>
+<status status="PASS" starttime="20231011 19:52:23.117" endtime="20231011 19:52:23.313"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_to_search}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231011 19:52:23.317" level="INFO">Clicking element 'xpath://*[@class="myntraweb-sprite desktop-iconSearch sprites-search"]'.</msg>
+<status status="PASS" starttime="20231011 19:52:23.313" endtime="20231011 19:52:26.079"/>
+</kw>
+<status status="PASS" starttime="20231011 19:52:23.117" endtime="20231011 19:52:26.079"/>
+</kw>
+<kw name="Get Text of the product" library="Instruction">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>${Get_prdname}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231011 19:52:26.099" level="INFO">${product_name} = D4M Solid Training T-shirt</msg>
+<status status="PASS" starttime="20231011 19:52:26.079" endtime="20231011 19:52:26.099"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product_name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231011 19:52:26.099" endtime="20231011 19:52:26.099"/>
+</kw>
+<status status="PASS" starttime="20231011 19:52:26.079" endtime="20231011 19:52:26.099"/>
+</kw>
+<kw name="Get Price of the product" library="Instruction">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${pagecontext}</var>
+<arg>${Get_price}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231011 19:52:26.115" level="INFO">${pagecontext} = Rs. 1099</msg>
+<status status="PASS" starttime="20231011 19:52:26.103" endtime="20231011 19:52:26.117"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${pagecontext}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231011 19:52:26.117" endtime="20231011 19:52:26.117"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[2]/div/main/div[3]/div[2]/div/div[2]/section/ul/li[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231011 19:52:26.117" level="INFO">Clicking element 'xpath:/html/body/div[2]/div/main/div[3]/div[2]/div/div[2]/section/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20231011 19:52:26.117" endtime="20231011 19:52:26.159"/>
+</kw>
+<status status="PASS" starttime="20231011 19:52:26.103" endtime="20231011 19:52:26.159"/>
+</kw>
+<status status="PASS" starttime="20231011 19:52:23.117" endtime="20231011 19:52:26.159"/>
+</test>
+<status status="PASS" starttime="20231011 19:51:14.400" endtime="20231011 19:52:26.163"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="TC1">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
